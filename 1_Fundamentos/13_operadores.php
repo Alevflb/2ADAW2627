@@ -33,3 +33,5 @@
     echo $estricto.$salto;
 
     echo "num1 y num2 NO son iguales: ".!($num1==$num2).$salto;
+
+    
