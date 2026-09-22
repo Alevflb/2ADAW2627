@@ -19,5 +19,25 @@
     <p>
         Ejercicio 4. Crea una función llamada calculadora que tenga 3 parámetros. Dos número y un string. Usar un switch para mostrar el resultado de la operación correspondiente. Las operaciones aceptadas serán: suma, resta, multiplicación y exponente.
     </p>
+    <p>
+        Ejercicio 5. Crea una función llamada analizarNumero(int $n, int $min, int $max):string que:
+        - Devuelva "fuera de rango" si n es menor que el rango minimo o n es mayor que el rango máximo
+        - Si está dentro del rango, indicar si es par o impar y además, si está en los bordes (n = min o n=max) o en el interior
+    </p>
+    <p>
+        Ejercicio 6: Crea una función llamada calcularEnvio(float $peso, bool $express, bool $internacional):string que determinará e ltupo de tarifa usando un match:
+            
+            - si el envío es internacional, express y pesa 2kilos o menos, la tarifa es "Express internacional ligero"
+
+            - si el envío es internacional pero no es express, la tarifa es "Estándar internacional"
+
+            - si el envío no es internacional, es express y pesa cinco kilos o más la tarifa es "Express nacional"
+
+            - si el envío no es internacional y no es express, la tarifa es "Estándar nacional"
+
+            - en cualquier otro caso, "Caso no contemplado"
+
+        Devuelve además un precio base distinto para cada caso (elige tú mismo las cantidades). El texto final debe ser tal que así: "Tarifa: X -- Precio: Y€".
+    </p>
 </body>
 </html>
