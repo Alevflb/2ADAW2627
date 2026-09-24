@@ -93,5 +93,13 @@
         date(annio, mes, dia) => devuelve la fecha en formato date
         strtotime(formato date) => el número de segundos que han pasado desde 1970 hacia delante
     </p>
+
+    <?php
+        // OPERADOR TERNARIO
+        // (condicion) ? (si se cumple la condicion) : (si no se cumple)
+        // Ejemplo: 
+        $n = rand();
+        echo ($n%2==0) ? "$n es par" :"$n es impar";
+    ?>
 </body>
 </html>
