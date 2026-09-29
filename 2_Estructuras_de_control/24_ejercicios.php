@@ -92,8 +92,28 @@
         date("Y-m-d") => para que me de la fecha actual
         date(annio, mes, dia) => devuelve la fecha en formato date
         strtotime(formato date) => el número de segundos que han pasado desde 1970 hacia delante
-    </p>
+     </p>
+     <hr><hr>       
+        <?php
 
+            function validarFecha(int $dia, int $mes, int $anio):string{
+                
+                if(!checkdate($mes, $dia, $anio)) return "Formato de la fecha introducida no válido";
+                $fechaIngresada = strtotime("$anio-$mes-$dia"); // pasar a segundos la fecha introducida
+                $hoy = strtotime(date("Y-m-d")); // pasa a segundos la fecha de hoy
+
+                if($fechaIngresada<$hoy)
+                    return "La fecha es anterior";
+                elseif($fechaIngresada>$hoy)
+                    return "La fecha es posterior";
+                else
+                    return "El mismo día";
+            }
+            echo validarFecha(28,9,2026);
+
+        ?>
+
+    
     <?php
         // OPERADOR TERNARIO
         // (condicion) ? (si se cumple la condicion) : (si no se cumple)
