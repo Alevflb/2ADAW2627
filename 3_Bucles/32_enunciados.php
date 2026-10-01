@@ -9,20 +9,20 @@
     <h2>Ejercicio 1</h2>
     <p>Con while, reccore desde 150 hasta 0. Muestra los pares con no sean múltiplos de 6. Calcula su cantidad, su suma y la media.</p>
     <?php
-        $n = 150;
-        $acum = 0;
-        $suma = 0;
-        while($n>=0){
+        // $n = 150;
+        // $acum = 0;
+        // $suma = 0;
+        // while($n>=0){
             
-            if($n%6!=0 && $n%2 == 0){
-                echo $n."<hr>";
-                $acum++;
-                $suma+=$n;
-            }
+        //     if($n%6!=0 && $n%2 == 0){
+        //         echo $n."<hr>";
+        //         $acum++;
+        //         $suma+=$n;
+        //     }
         
-            $n--;
-        }
-        echo "El número de pares no mult 6 es: $acum La suma es: $suma y la media es: ".($suma/$acum)."<br>";
+        //     $n--;
+        // }
+        // echo "El número de pares no mult 6 es: $acum La suma es: $suma y la media es: ".($suma/$acum)."<br>";
     ?>
     <h2>Ejercicio 2</h2>
     <p>Recorre desde 1 hasta 200 con un while, seleccionando los múltiplos de 7 que no sean múltiplos de 3. Muestra cada seleccionado en un li dentro de una lista ordenada. Cuando hayas acabado de mostrar todos, fuera de la lista, enseña la cantidad de números que hay, su suma y su media: Corrige maikel angel CORREGIDO</p>
@@ -47,9 +47,61 @@
     <h3>Ejecicio 8</h3>
     <p>Crea la función factorial($n) para enteros de 0 a 15, rechazando valores fuera de ese parámetros. Corrige Chakib CORREGIDO</p>
     <h3>Ejercicio 9</h3>
-    <p>Sin convertirlo en cadena ni array, recorre las cifras de un número entero entre 0 y 999999 generado de manera aleatoria. Calcula la cantidad de cifras que tiene el número, la suma de sus cifras, la cifra mayor, la menor y el número de ceros que contiene. Devolver una cadena como la siguiente: "Para 4050: cuatro cifras, suma 9, mayor 5, menor 0, 2 ceros" Corrige Samu</p>
+    <p>Sin convertirlo en cadena ni array, recorre las cifras de un número entero entre 0 y 999999 generado de manera aleatoria. Calcula la cantidad de cifras que tiene el número, la suma de sus cifras, la cifra mayor, la menor y el número de ceros que contiene. Devolver una cadena como la siguiente: "Para 4050: cuatro cifras, suma 9, mayor 5, menor 0, 2 ceros" Corrige Samu CORREGIDO</p>
     <h3>Ejercicio 10</h3>
-    <p>VERSIÓN 1: Crea una función que dependiendo del parámetro que se le pase, dibujará un triángulo más o menos grande. El parámetro indicará el tamaño del triángulo. Altura mínima 3 (obligatorio)</p>
-    <p>VERSIÓN 2: Triángulo invertido</p>
+    <p>VERSIÓN 1: Crea una función que dependiendo del parámetro que se le pase, dibujará un triángulo más o menos grande. El parámetro indicará el tamaño del triángulo. Altura mínima 3 (obligatorio)Corrige Ale CORREGIDO</p>
+    <p>VERSIÓN 2: Triángulo invertido Corrige RafaC CORREGIDO</p>
+    <h3>Ejercicio 11</h3>
+    <p>
+        EL DE TABLA CON CUADRADO CUBO.. 
+    </p>
+
+    <?php
+    function tablita(int $n){
+    ?>
+    <table border="">
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Cuadrado</th>
+                <th>Cubo</th>
+                <th>Signo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+            $color = 1;
+            for($i=$n;$i>=-$n;$i--){
+                if($i!=0){
+            ?>
+            <tr 
+            <?php
+                if($color%2!=0) echo "style='background-color:lightblue'";
+                else echo "style='background-color:pink'"; 
+                $color++;
+            ?>
+            >
+                <td><?php echo $i; ?></td>
+                <td><?=  pow($i,2); ?></td>
+                <td><?=  pow($i,3); ?></td>
+                <td>
+                    <?php
+                        // if($i>0) echo "Positivo";
+                        // else echo "Negativo";
+
+                        echo ($i>0) ? "Positivo" : "Negativo";
+                    ?>
+                </td>
+            </tr>
+            <?php 
+            }   
+            }
+            ?>
+        </tbody>
+    </table>
+    <?php
+    }
+    tablita(4);
+    ?>
 </body>
 </html>
