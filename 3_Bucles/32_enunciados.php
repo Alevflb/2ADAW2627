@@ -9,20 +9,20 @@
     <h2>Ejercicio 1</h2>
     <p>Con while, reccore desde 150 hasta 0. Muestra los pares con no sean múltiplos de 6. Calcula su cantidad, su suma y la media.</p>
     <?php
-        // $n = 150;
-        // $acum = 0;
-        // $suma = 0;
-        // while($n>=0){
+        $n = 150;
+        $acum = 0;
+        $suma = 0;
+        while($n>=0){
             
-        //     if($n%6!=0 && $n%2 == 0){
-        //         echo $n."<hr>";
-        //         $acum++;
-        //         $suma+=$n;
-        //     }
+            if($n%6!=0 && $n%2 == 0){
+                echo $n."<hr>";
+                $acum++;
+                $suma+=$n;
+            }
         
-        //     $n--;
-        // }
-        // echo "El número de pares no mult 6 es: $acum La suma es: $suma y la media es: ".($suma/$acum)."<br>";
+            $n--;
+        }
+        echo "El número de pares no mult 6 es: $acum La suma es: $suma y la media es: ".($suma/$acum)."<br>";
     ?>
     <h2>Ejercicio 2</h2>
     <p>Recorre desde 1 hasta 200 con un while, seleccionando los múltiplos de 7 que no sean múltiplos de 3. Muestra cada seleccionado en un li dentro de una lista ordenada. Cuando hayas acabado de mostrar todos, fuera de la lista, enseña la cantidad de números que hay, su suma y su media: Corrige maikel angel CORREGIDO</p>
@@ -55,8 +55,7 @@
     <p>
         EL DE TABLA CON CUADRADO CUBO.. 
     </p>
-
-    <?php
+<?php
     function tablita(int $n){
     ?>
     <table border="">
