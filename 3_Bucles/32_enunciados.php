@@ -102,5 +102,12 @@
     }
     tablita(4);
     ?>
+    <h3>NUEVOS EJERCICIOS EXTRAS PARA PRACTICAR EN CASA</h3>
+    <p>
+        Buscar las 5 primeras parejas (p, p+2) en las que ambos números sean primos, examinando desde p = 2 hasta un máximo configurable. Haz una función esPrimo($n) y devuelve un booleano para que compruebe divisores con una condición que termine al encontrar uno; (3,5), (5,7), (11,13), (17,19), (29,31).
+    </p>
+    <p>
+        Para cada entero de 2 a 500, calcula la suma de sus divisores (excluido el propio número). Clasificalo como deficiente si la suma es menor, perfecto si la suma es igual (al número) o abundante si la suma es mayor.
+    </p>
 </body>
 </html>
