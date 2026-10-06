@@ -41,6 +41,21 @@
     }
 
     //5. FOREACH
+    // sirve para iterar los elementos de un array tanto asociativo como indexado
+    $nombres = ["12312323A" => "Ana","12312323B" => "Luis","12312323C" => "Marta","12312323D"=> "Paquito","12312323E" => "Emilio"];
+    foreach($nombres as $patata){
+        echo $patata."<br>";
+    }
+
+    $deportes = ["baloncesto"=>"lebron", "futbol"=>"Messi/CR7", "tenis"=>"federer", "MMA"=>"nurmagomedov"];
+
+    foreach($deportes as $clave => $valor){
+        if($clave != "MMA")
+            echo "<p>En el $clave el rey es $valor</p>";
+        else 
+            echo "<p>En la $clave el rey es $valor</p>";
+    }
+
     //6. GENERAR HTML CON UN BUCLE
     echo "<h2>Generar una lista HTML con un bucle</h2>";
     echo $numero = 1;

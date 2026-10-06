@@ -85,8 +85,21 @@
         $animales["anfibio"] = "rana";
         echo $animales["anfibio"] ?? "no existe $salto";
 
-
+        echo $salto;
         //5. COMPARACIÓN
+        $a = ["uno" => 1, "dos" => 2];
+        $b = ["dos" => 2, "uno" => 1];
+
+        var_dump($a == $b); //true: mismas asociaciones clave-valor
+        var_dump($a === $b); //false: el orden de inserción de claves-valores es distinto
+        echo $salto;
+        $a = [1,2];
+        $b = ["1","2"];
+        var_dump($a == $b); //true: pq son los mismos valores
+        var_dump($a === $b); //false: pq aunq tengan los mismos valores, tienen tipos distintos
+
+        $p1 = ["Ana","Luis"];
+        $p2 = ["Luis", "Ana"];
     ?>
 </body>
 </html>
