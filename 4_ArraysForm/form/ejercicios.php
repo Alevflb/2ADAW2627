@@ -160,14 +160,13 @@
                     <option value="id">ID</option>
                     <option value="nombre">NOMBRE</option>
                     <option value="salario">Salario</option>
-                    <input type="submit" value="ENVIAR">
         </select>
         <select name="orden">
                     <option disabled selected>ELIGE ORDEN</option>
                     <option value="asc">ASCEDENTE</option>
-                    <option value="desc">DESCENDENTE</option>
-                    <input type="submit" value="ENVIAR">
+                    <option value="desc">DESCENDENTE</option>      
         </select>
+        <input type="submit" value="ENVIAR">
     </form>
 </body>
 </html>
