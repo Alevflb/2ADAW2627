@@ -150,5 +150,24 @@
     <h3>Ejercicio 4</h3>
     <p>Introduce las notas de varias asignaturas de un solo estudiante y obtén las siguientes estadísticas: Total de notas // Nota máxima // Nota mínima // Media aritmética // El número de aprobados // el número de suspensos</p>
     <p>En el formulario tendremos dos campos de texto, en el primero definiremos el nombre de las asignaturas separadas por comas y en el segundo las notas de cada asignatura separadas por coma. Para trabajar este ejercicio, teneis que construir un array asociativo donde las claves son el nombre de cada asignatura y el valor es la nota de dicha asignatura. Después de mostrar todas las estadísticas, mostrar una tabla con tres columnas. Asignatura || Nota || Calificación. Mostrar la fila en verde si esta aprobao y en rojo si ha suspendido la asignatura</p>
+
+    <h3>Ejercicio 5</h3>
+    <p>Dado un array bidimensional, crear un formulario con dos listas deslpegables en el que en la primera lista se especifique a través de qué columna vamos a ordenar y la segunda especificará el orden que se aplicará</p>
+    <form action="tabla.php" method="post">
+        <input type="hidden" name="ejercicios" value="ej5">
+        <select name="columna">
+                    <option disabled selected>ELIGE COLUMNA</option>
+                    <option value="id">ID</option>
+                    <option value="nombre">NOMBRE</option>
+                    <option value="salario">Salario</option>
+                    <input type="submit" value="ENVIAR">
+        </select>
+        <select name="orden">
+                    <option disabled selected>ELIGE ORDEN</option>
+                    <option value="asc">ASCEDENTE</option>
+                    <option value="desc">DESCENDENTE</option>
+                    <input type="submit" value="ENVIAR">
+        </select>
+    </form>
 </body>
 </html>
