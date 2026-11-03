@@ -156,5 +156,26 @@
     echo "<pre>"; print_r($copia); echo "</pre>";
     ?>
 
+    <h3>CESTA DE LA COMPRA</h3>
+    <?php
+    $productos = [
+        "manzanas" => ["nombre" => "Manzanas", "precio" => 1.50, "categoria" => "Alimentación", "iva" => 0.04],
+        "leche" => ["nombre" => "Leche", "precio" => 0.90, "categoria" => "Alimentación", "iva" => 0.04],
+        "pan" => ["nombre" => "Pan", "precio" => 1.20, "categoria" => "Alimentación", "iva" => 0.04],
+        "cerveza" => ["nombre" => "Cerveza", "precio" => 2.50, "categoria" => "Bebidas", "iva" => 0.10],
+        "refresco" => ["nombre" => "Refresco", "precio" => 1.80, "categoria" => "Bebidas", "iva" => 0.10],
+        "raton" => ["nombre" => "Ratón inalámbrico", "precio" => 25.00, "categoria" => "Electrónica", "iva" => 0.21]
+    ];
+    ?>
+    <form action="" method="post">
+        <input type="hidden" name="ejercicios" value="cesta">
+        Manzanas (1.50€/Kg - Alimentación): <input type="text" name="manzanas" id=""> <br>
+        Leche (0.90€/L - Alimentación): <input type="text" name="leche" id=""> <br>
+        Manzanas (1.50€/Kg - Alimentación): <input type="text" name="manzanas" id=""> <br>
+        Manzanas (1.50€/Kg - Alimentación): <input type="text" name="manzanas" id=""> <br>
+        Manzanas (1.50€/Kg - Alimentación): <input type="text" name="manzanas" id=""> <br>
+        Manzanas (1.50€/Kg - Alimentación): <input type="text" name="manzanas" id=""> <br>
+        <input type="submit" value="ENVIAR">
+    </form>
 </body>
 </html>
