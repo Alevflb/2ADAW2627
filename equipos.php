@@ -57,5 +57,8 @@ $equipito = $_POST["nombre"];
         <?php
         $pos++;
     }
+
+    $arr = ["nombre" => "ale", "apellido" => "fulgencio"];
+    sort($arr);
     ?>
 </table>
