@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cesta de la compra</title>
+</head>
+
+<body>
+    <h1>Cesta de la compra</h1>
+    <p>Descuentos: 10% si compras 5 o más unidades de un producto, 20% si compras 10 o más.</p>
+    <form action="cesta.php" method="post">
+
+        <label for="manzanas">Manzanas (1.50€/kg - Alimentación):</label>
+        <input type="number" name="manzanas" id="manzanas" min="0" value="0">
+
+        <label for="leche">Leche (0.90€/litro - Alimentación):</label>
+        <input type="number" name="leche" id="leche" min="0" value="0">
+
+        <label for="pan">Pan (1.20€/unidad - Alimentación):</label>
+        <input type="number" name="pan" id="pan" min="0" value="0">
+
+        <label for="cerveza">Cerveza (2.50€/pack - Bebidas):</label>
+        <input type="number" name="cerveza" id="cerveza" min="0" value="0">
+
+        <label for="refresco">Refresco (1.80€/pack - Bebidas):</label>
+        <input type="number" name="refresco" id="refresco" min="0" value="0">
+
+        <label for="raton">Ratón inalámbrico (25.00€ - Electrónica):</label>
+        <input type="number" name="raton" id="raton" min="0" value="0">
+
+        <input type="submit" value="Calcular ticket">
+
+        <!-- Dejo el min = 0 en todos los inputs pa que no de porsaco después desde php, más adelante controlaremos los valores que me entran en un formulario desde bakcend :) -->
+    </form>
+</body>
+
+</html>
