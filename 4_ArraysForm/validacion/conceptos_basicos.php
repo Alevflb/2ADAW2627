@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        pre{
+            background-color: grey;
+        }
+    </style>
 </head>
 <body>
     <h1>1. isset, empty, trim y htmlspecialchars</h1>
@@ -18,7 +23,7 @@
     var_dump(isset($valor)); 
     var_dump(empty($valor));
     ?>
-    <table>
+    <table border="2">
         <tr>
             <th>Valor $x</th>
             <th>isset($x)</th>
@@ -36,7 +41,36 @@
             ['"0.0"', "0.0", false],
             ['"hola"', "hola", false]
         ];
+        foreach($pruebita as $prueba){
+            $x = $prueba[1];
+            echo "<tr>";
+            echo "<td>". $prueba[0] . "</td>";
+            echo "<td>". (isset($x) ? "true" : "false") . "</td>";
+            echo "<td>". (empty($x) ? "true" : "false") . "</td>";
+            echo "</tr>";
+        }
         ?>
+        <tr>
+            <td>Variable no definida</td>
+            <td>false</td>
+            <td>true</td>
+        </tr>
     </table>
+    <form action="" method="get">
+        <input type="text" name="nombre" id="">
+        <input type="submit" value="ENVIAR">
+    </form>
+    
+    <?php
+    $nombre = $_GET["nombre"];
+    $nombre = trim($nombre);
+
+   // echo "<pre>". $_GET["nombre"]."</pre>";
+   // echo "<pre>". $nombre."</pre>";
+    $nombre = htmlspecialchars($nombre);
+    echo "<pre>". $nombre."</pre>";
+    // <script>alert('Holiiii');</script> document.body.innerHTML = "<h1>Sitio Jakiado</h1></script>"; <b onmouseover=alert('Hooooliiiiii')>Acercate bebito...</b>
+    ?>
+    
 </body>
 </html>
