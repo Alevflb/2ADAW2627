@@ -46,7 +46,7 @@
     </table>
 
     <form action="" method="get">
-        <label> Comentario: <input type="text" name="comentario"></label>
+        <label> Comentario: <input type="text" name="patata"></label>
         <!-- <input type="submit" value="Enviar" name="hePulsadoEsteBoton"> -->
         <button>Enviar</button>
     </form>
