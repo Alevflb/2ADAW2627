@@ -45,6 +45,25 @@
 
         <input type="submit" value="ENVIAR">
     </form>
-    
+    <?php
+        if($_SERVER["REQUEST_METHOD"] == "GET"){
+            $entero = $_GET["entero"];
+            $entero = filter_var($entero, FILTER_VALIDATE_INT);
+            if(!$entero){
+                echo "<p class='error'>El dato no es un entero :(</p>";
+            }else{
+                echo "<p class='acierto'>El dato es un entero :) $entero</p>"; 
+                echo $entero;
+                echo $_GET["entero"];
+            }
+
+            // www.google.com FALSE
+            // https://www.google.com TRUE
+            
+            // algo@doc.medac.algo
+
+            // filter_var($entero, FILTER_VALIDATE_IP) =>> (0-255).255.255.255
+        }
+    ?>
 </body>
 </html>
